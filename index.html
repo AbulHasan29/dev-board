@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-slate-100">
+<body class="bg-slate-200">
 
      <section class="mx-20 bg-slate-50 p-2">
             <!-- Navbar -->
@@ -25,28 +25,28 @@
                           <img src="assets/checkbox.png" alt="">
                       </div>
                       <div>
-                          <h1 class="text-3xl">35</h1>
+                          <h1 id="increase-value" class="text-3xl">23</h1>
                       </div>
                       <div class="ml-10">
-                          <img src="assets/theme-btn.png" alt="">
+                          <img id="theme-btn" class="cursor-pointer" src="assets/theme-btn.png" alt="Theme Toggle">
                       </div>
                   </div>
             </nav>
         </section>
-    <div class="flex  mt-5 mx-20 gap-4 p-3 border ">   
-        <div class="border bg-slate-50 w-3/4 p-2"> 
+    <div class="flex  mt-5 mx-20 gap-4 p-3 ">   
+        <div class=" bg-slate-50 w-3/4 p-2"> 
        <!-- banner section -->
            <section class="grid grid-flow-col-dense mb-5 ">
-                <div class="flex items-center mr-8 bg-slate-100 mt-5 rounded">
+                <div class="flex items-center mr-8 bg-slate-200 mt-5 rounded">
                     <div>
                       <img class="w-8/12" src="assets/checkbox.png" alt="">
                     </div>
                     <div>
                         <p>Task Assigned</p>
-                        <h1 class="font-bold">35</h1>
+                        <h1 id="decrease-value" class="font-bold">6</h1>
                     </div>
                 </div>
-                <div class="flex items-center bg-gradient-to-r from-blue-500 to-blue-300 rounded mt-5">
+                <div id="go-question" class="flex items-center bg-gradient-to-r from-blue-500 to-blue-300 rounded mt-5 cursor-pointer">
                     <div>
                        <img class="w-3/4" src="assets/board.png" alt="">
                     </div>
@@ -54,12 +54,12 @@
                         <h1>Discover something New Today!</h1>
                     </div>
                 </div>
-                <div class="flex items-center rounded mt-5  bg-slate-100 ml-5">
+                <div class="flex items-center rounded mt-5  bg-slate-200 ml-5">
                     <div>
                        <img class="w-8/12"  src="assets/calender.png" alt="">
                     </div>
                     <div>
-                         <h1>Wed,<br>july 28 2025</h1>     
+                         <h1 id="current-date"></h1>     
                     </div>
                 </div>
            </section>
@@ -160,7 +160,7 @@
             </section>
         </div>
             <!-- Log section -->
-            <div class="border bg-slate-50 w-1/4">
+            <div class=" bg-slate-50 w-1/4 log_section">
                 <div class="flex items-center justify-center mt-4">
                     <div>
                        <img class="w-8/12" src="assets/activity.png" alt="">
@@ -170,9 +170,15 @@
                     </div>
                 </div>
                 <div class="flex justify-center mt-3"> 
-                <button class="btn btn-primary">Clear History</button>
+                <button class="btn btn-accent">Clear History</button>
                 </div>
             </div>
     </div>
+
+
+     <script src="script/date.js"></script>
+     <script src="script/theme.js"></script>
+     <script src="script/addheading.js"></script>
+     <script src="script/reversefile.js"></script>
 </body>
 </html>
